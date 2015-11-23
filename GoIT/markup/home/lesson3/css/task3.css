@@ -3,6 +3,14 @@
 		src: url(..fonts/OpenSans-Regular.ttf);
 }
 
+.clearfix:after {
+		content: "";
+		display: block;
+		height: 0;
+		clear: both;
+		visibility: hidden;
+}
+
 body {
 		background-color: #f9f9f9
 }
@@ -112,10 +120,15 @@ aside {
 		background: #f9f9f9;
 }
 
+.left_menu li.active a {
+		padding-left: 36px;
+		color: #333;
+		background: #f9f9f9;
+}
+
 /* CONTAINER - ARTICLE */
 
 article .image {
-		/*box-sizing: border-box;*/
 		border: 1px solid #ccc;
 		width: 679px;
 		height: 400px;
@@ -145,12 +158,11 @@ article {
 footer{
 		box-sizing: border-box;
 		clear: both;
-		/*float: left;*/
 		width: 970px;
 		height: 40px;
 		background-color: #e1e1e1;
-		font: 13.33px 'Open Sans',sans-serif;
-		padding: 15px 20px 15px 25px;
+		font: 13.33px 'Open Sans', sans-serif;
+		padding: 0 15px;
 }
 
 footer ul {
@@ -160,6 +172,7 @@ footer ul {
 footer ul li {
 		display: inline-block;
 		margin-right: 95px;
+		padding-top: 10px;
 }
 
 footer li a:not(:hover) {
@@ -174,12 +187,5 @@ footer li a:hover {
 footer .copyright {
 		float: right;
 		color: #2c2c2c;
-}
-
-.container:after {
-		content: "";
-		display: block;
-		height: 0;
-		clear: both;
-		visibility: hidden;
+		padding-top: 10px;
 }
