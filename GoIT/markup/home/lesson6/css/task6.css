@@ -108,13 +108,13 @@
 
 input[type="text"], 
 input[type="password"] {
-		box-sizing: border-box;
 		width: 114px;
-		height: 15px;
-		margin-top: 5px;
-		padding-left: 4px;
+		height: 13px;
+		margin-top: 4px;
+		text-indent: 4px;
 		border: 1px #7b8a94 solid;
-		font: 11px/11px 'Lucida Sans Unicode', sans-serif;
+		font: 11px 'Lucida Sans Unicode', sans-serif;
+
 }
 
 input[type="text"] {
